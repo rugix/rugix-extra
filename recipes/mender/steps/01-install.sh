@@ -12,8 +12,7 @@ apt-get install -y \
     apt-transport-https \
     ca-certificates \
     curl \
-    gnupg-agent \
-    software-properties-common
+    gnupg-agent
 
 curl -fsSL https://downloads.mender.io/repos/debian/gpg \
     > /etc/apt/trusted.gpg.d/mender.asc

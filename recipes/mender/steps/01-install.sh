@@ -30,6 +30,9 @@ install -D -m 644 "${RECIPE_DIR}/files/mender-state.toml" \
 systemctl enable mender-client.service
 systemctl enable mender-connect.service
 
+# Remove broken symlink to `/data`. Rugix is going to manage the directory.
+rm -rf /var/lib/mender
+
 mkdir -p /usr/lib/rugix-mender/bin
 install -D -m 755 "${RECIPE_DIR}/files/reboot" \
     -t /usr/lib/rugix-mender/bin

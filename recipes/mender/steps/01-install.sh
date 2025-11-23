@@ -17,7 +17,7 @@ apt-get install -y \
 curl -fsSL https://downloads.mender.io/repos/debian/gpg \
     > /etc/apt/trusted.gpg.d/mender.asc
 
-echo "deb [arch=$ARCH] https://downloads.mender.io/repos/debian debian/${VERSION_CODENAME}/stable main" \
+echo "deb [arch=$ARCH] https://downloads.mender.io/repos/device-components debian/${VERSION_CODENAME}/stable main" \
     > /etc/apt/sources.list.d/mender.list
 
 apt-get update

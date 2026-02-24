@@ -1,4 +1,0 @@
-description = "install Mender"
-dependencies = ["core/pkg-update"]
-priority = 1_000
-

@@ -1,0 +1,4 @@
+description = "install Chromium-based web kiosk"
+
+[parameters]
+url = { default = "http://127.0.0.1" }

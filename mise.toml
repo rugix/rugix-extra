@@ -1,0 +1,7 @@
+[env]
+DOCKER = "{{ get_env(name=\"DOCKER\", default=\"podman\") }}"
+
+[tasks."bakery"]
+shell = "nix develop \"{{config_root}}\" --command bash -euo pipefail -c"
+description = "Run Rugix Bakery against the recipe collection."
+run = "./run-bakery \"$@\""

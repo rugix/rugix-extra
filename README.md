@@ -29,3 +29,13 @@ Unless you explicitly state otherwise, any contribution intentionally submitted 
 ---
 
 Made with ❤️ for OSS by [Silitics](https://www.silitics.com)
+
+## Development Tasks
+
+Install Nix with flakes enabled and [mise](https://mise.jdx.dev/). On x86-64
+and AArch64 Linux, `mise run bakery -- <args>` selects the pinned Nix shell
+and invokes Bakery with Podman. Set `DOCKER=docker` to use an existing Docker
+installation.
+
+Integration tests need a consuming project with configured systems and
+tests; this recipe collection does not have a standalone test suite.

@@ -13,12 +13,19 @@ We follow [Cargo's flavor of semantic versioning](https://doc.rust-lang.org/carg
 You can also use the most recent development version by omitting the `branch` property.
 Please be aware that this may break your builds if we introduce backwards-incompatible changes.
 
+## Development Tasks
+
+Install Docker, then run Bakery with `./run-bakery <args>` or
+[Mise](https://mise.jdx.dev/)'s `mise run bakery -- <args>`.
+Set `DOCKER=podman` to use Podman instead.
+
 ## 🙌 Contributions
 
 We accept pull requests adding additional recipes to `rugix-extra` under the condition that these recipes are sufficiently general and widely applicable.
 Please do not submit recipes for your own specific applications.
 For those, you should create a separate repository yourself.
 If you are unsure, feel free to open an issue.
+Test changes in a consuming Rugix Bakery project with configured systems and tests.
 
 ## ⚖️ Licensing
 

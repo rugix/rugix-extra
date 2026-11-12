@@ -1,0 +1,3 @@
+[tasks."bakery"]
+description = "Run Rugix Bakery against the recipe collection."
+run = "./run-bakery \"$@\""
